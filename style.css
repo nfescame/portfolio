@@ -9,12 +9,6 @@
   text-decoration: none;
 }
 
-:root {
-  __font-primary: "Baloo Da 2", serif;
-  __font-secundary: "Josefin Slab", serif;
-  __font-action: "Mulish", serif;
-}
-
 .hamburguer {
   width: 2rem;
   height: 1.5rem;
@@ -61,7 +55,7 @@
   justify-content: center;
   background-color: #a044ff;
   color: #fff;
-  font-family: var(__font-action);
+  font-family: "Mulish", serif;
   opacity: 0;
 }
 .hamburguer span::before {
@@ -139,7 +133,7 @@ header {
 }
 
 .banner button {
-  font-family: var(__font-action);
+  font-family: "Mulish", serif;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bolder;
@@ -206,7 +200,7 @@ header {
 }
 
 .menu-link {
-  font-family: var(__font-action);
+  font-family: "Mulish", serif;
   font-size: 2rem;
   color: #555;
   transition: color 1s;
@@ -273,19 +267,16 @@ header {
   grid-row: 5/-1;
 }
 
-.sessao-conhecimentos {
-  background-color: #ebe8e8;
-}
-
 .sessao-header {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 2rem;
+  color: #fff;
 }
 
 .sessao-header h1 {
-  font-family: var(__font-primary);
+  font-family: "Baloo Da 2", serif;
   font-size: 3rem;
   color: #4b4b4b;
   border-bottom: solid 3px #a044ff;
@@ -294,21 +285,25 @@ header {
 .conhecimento-header {
   display: flex;
   align-items: center;
+  color: #555;
 }
 
 .conhecimento-header i {
   font-size: 2.5rem;
+  color: #a044ff;
 }
 
 .conhecimento-header h3 {
-  font-family: var(__font-secundary);
+  font-family: "Josefin Slab", serif;
   font-size: 2rem;
   padding-left: 1rem;
+  color: #555;
 }
 
 .conhecimento-text {
-  font-family: var(__font-secundary);
+  font-family: "Josefin Slab", serif;
   margin-top: 1rem;
+  color: #555;
 }
 
 .conhecimento-img-wrapper {
@@ -363,19 +358,19 @@ header {
 }
 
 .card-info h2 {
-  font-size: var(__font-primary);
+  font-size: "Baloo Da 2", serif;
   font-size: 2rem;
   font-weight: 500;
   color: #eee;
 }
 .card-info h3 {
-  font-family: var(__font-secundary);
+  font-family: "Josefin Slab", serif;
   font-weight: bolder;
-  color: #ff4081;
+  color: #a17fe0;
   margin-bottom: 1.5rem;
 }
 .card-info p {
-  font-family: var(__font-secundary);
+  font-family: "Josefin Slab", serif;
   color: #eee;
   font-weight: bolder;
   width: 80%;
@@ -388,7 +383,7 @@ header {
   background-color: #6a3093;
   background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
   background: linear-gradient(to right, #a044ff, #6a3093);
-  font-family: var(__font-action);
+  font-family: "Mulish", serif;
   font-size: 1rem;
   color: #eee;
   border-radius: 0.5rem;
