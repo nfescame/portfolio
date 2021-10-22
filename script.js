@@ -4,6 +4,12 @@ document
     document.querySelector(".container").classList.toggle("show-menu")
   );
 
+document
+  .querySelector(".menu")
+  .addEventListener("click", () =>
+    document.querySelector(".container").classList.toggle("show-menu")
+  );
+
 document.querySelector("#qtde").addEventListener("change", atualizarPreco);
 document.querySelector("#js").addEventListener("change", atualizarPreco);
 document
