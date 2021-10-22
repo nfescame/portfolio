@@ -603,17 +603,15 @@ footer {
   box-shadow: 0 0.1rem 0.6rem #000;
 }
 
-/*Responsividade Tablet*/
-
 @media (max-width: 600px) {
   header {
-    height: 75vh;
+    height: 100vh;
     width: 100vw;
   }
-
-  section .conhecimentos-img-wrapper {
+  .conhecimento-img-wrapper img {
     display: none;
   }
+
   section .conhecimentos {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -681,28 +679,87 @@ footer {
     height: 15rem;
   }
 
+  /* contato */
+
   .contato-left {
-    display: none;
+    width: 100%;
+    height: 100%;
   }
-  .contato-right {
+  .contato-rigth {
     width: 100%;
     border-radius: 5px;
+    padding: 0;
   }
   .contato-wrapper {
-    width: 70%;
-    display: flex;
+    width: 100%;
+    height: 85vh;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .sessao-contato h1 {
+    width: 100%;
+    text-align: center;
+    font-family: "Josefin Slab", serif;
+    color: #262626;
+    font-size: 3rem;
+    font-weight: lighter;
+  }
+  .sessao-contato {
+    height: 100vh;
   }
 
-  .orcamento-wrapper {
-    width: 90%;
-    height: 75%;
-    background: #ffffff99;
-    border-radius: 10px;
-    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+  .sessao-contato form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .input-group {
     position: relative;
   }
 
+  .field {
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1rem;
+    border-bottom: 1px dashed #000;
+    height: 3rem;
+    outline: none;
+    margin: 2rem 0;
+  }
+  .input-group textarea {
+    padding-top: 1rem;
+    max-width: 20rem;
+    max-height: 3rem;
+  }
+
+  .field-label {
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: all 0.3s;
+  }
+
+  .field:focus ~ label {
+    top: 2;
+    font-size: 1.6rem;
+  }
+
+  .field:focus {
+    border-bottom: solid 1px;
+  }
+
+  .btn-submit {
+    width: 50%;
+    height: 2.5rem;
+  }
+
+  /* orcamento */
   .sessao-orcamento {
     width: 100%;
     height: 100vh;
@@ -711,192 +768,55 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  .footer-content {
-    width: 90%;
-  }
-
-  .social-list a {
-    margin: 0 1rem;
-    font-size: 1.3rem;
-  }
-}
-
-@media (max-width: 300px) {
-  header {
-    width: 100vh;
-    height: 100vh;
-  }
-  .banner h1 {
-    width: 90%;
-    font-size: 4rem;
-    line-height: 3.7rem;
-  }
-  .sidebar {
-    height: 100%;
-  }
-  section .conhecimentos-img-wrapper {
-    display: none;
-  }
-  .sessao-conhecimentos {
-    width: 100vh;
-  }
-  section .conhecimentos {
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(6, 6rem);
-    row-gap: 0.5rem;
-    text-align: justify;
-  }
-  .conhecimentos p {
-    line-height: 1rem;
-  }
-  .conhecimento:nth-child(1) {
-    grid-column: 2/8;
-    grid-row: 1/3;
-  }
-
-  .conhecimento:nth-child(2) {
-    grid-column: 2/8;
-    grid-row: 3/5;
-  }
-
-  .conhecimento:nth-child(3) {
-    grid-column: 2/8;
-    grid-row: 5/-1;
-  }
-
-  .conhecimento:nth-child(4) {
-    grid-column: 10/16;
-    grid-row: 1/3;
-  }
-
-  .conhecimento:nth-child(5) {
-    grid-column: 10/16;
-    grid-row: 3/5;
-  }
-
-  .conhecimento:nth-child(6) {
-    grid-column: 10/16;
-    grid-row: 5/-1;
-  }
-  .sessao-conhecimentos {
-    background-color: rgb(235, 235, 235);
-  }
-
-  .sessao-projetos h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .projetos {
-    width: 100vh;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4);
-    display: grid;
-  }
-
-  .card:nth-child(1) {
-    width: 90vh;
-    height: 25rem;
-    grid-column: 2/3;
-  }
-  .card:nth-child(2) {
-    width: 90vh;
-    height: 25rem;
-    grid-column: 2/3;
-    padding: 0;
-  }
-  .card:nth-child(3) {
-    width: 90vh;
-    height: 25rem;
-    grid-column: 2/3;
-    padding: 0;
-  }
-  .card-info {
-    position: absolute;
-    bottom: 0;
-    opacity: 0;
-    visibility: hidden;
-    margin-top: 1rem;
-    padding-left: 1.5rem;
-    text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.4);
-    transition: all 0.3s;
-  }
-
-  .card-info h2 {
-    font-family: var(--font-primary);
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 2.3rem;
-    color: rgb(248, 248, 248);
-  }
-
-  .card-info h3 {
-    font-family: var(--font-action);
-    font-weight: bolder;
-    color: rgb(255, 67, 67);
-    margin-bottom: 1.5rem;
-  }
-
-  .card-info p {
-    font-family: var(--font-secondary);
-    color: #eee;
-    font-weight: 500;
-    width: 80%;
-    margin-bottom: 1rem;
-  }
-  #header-proj {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: auto;
-    border-bottom: none;
-    padding-left: 13rem;
-  }
-  .card-info {
-    font-size: 1.4rem;
-  }
-
-  .sessao-contato {
-    width: 100vh;
-    height: 100vh;
-  }
-  .contato-wrapper {
-    width: 90%;
-    height: 30rem;
-    display: flex;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
-  }
-
-  .contato-left {
-    display: none;
-  }
-  /*Area do form*/
-  .contato-right {
-    width: 100%;
-    background-color: #eee;
-    padding: 1rem 3rem 3rem 3rem;
-    border-radius: 2%;
-  }
-  .sessao-orcamento {
-    width: 100vh;
-    height: 100vh;
-  }
 
   .orcamento-wrapper {
-    height: 90%;
-    width: 80%;
+    width: 100%;
+    height: 75%;
+    background: #ffffff99;
+    border-radius: 10px;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    position: relative;
   }
 
-  .sessao-orcamento h1 {
-    font-size: 2.3rem;
+  .orcamento-wrapper h1 {
+    top: -90px;
+    left: 40px;
+    width: 50%;
   }
-  .form-orc {
-    padding-top: 2rem;
+
+  .orcamento-wrapper form {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 0rem;
+    row-gap: 4rem;
   }
-  footer {
-    width: 100vh;
+
+  .sessao-orcamento label {
+    font-size: 1.3rem;
+    font-weight: bold;
   }
+  .sessao-orcamento input[type="checkbox"] {
+    font-size: 2rem;
+    width: 4rem;
+  }
+
+  .sessao-orcamento input[type="number"] {
+    font-size: 2rem;
+    width: 4rem;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: 0.3rem;
+  }
+
+  .btn-orcamento {
+    text-transform: uppercase;
+    padding: 1rem;
+    cursor: pointer;
+    grid-column: 2;
+  }
+
   .footer-content {
     width: 90%;
   }
