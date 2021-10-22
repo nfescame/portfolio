@@ -37,7 +37,7 @@
 
       <header>
         <div class="img-wrapper">
-          <img src="./imagens/bg.jpg" alt="back-ground-img" />
+          <img src="./imagens/bg2.jpg" alt="back-ground-img" />
         </div>
 
         <div class="banner">
@@ -225,10 +225,12 @@
           </div>
         </div>
       </section>
-
+      
       <section class="sessao-contato">
         <div class="contato-wrapper">
-          <div class="contato-left"></div>
+          <div class="contato-left">
+            Photo by <a href="https://unsplash.com/@altumcode?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">AltumCode</a> on <a href="https://unsplash.com/s/photos/developer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+          </div>
           <div class="contato-rigth">
             <h1>Contato</h1>
             <form action="">
@@ -247,6 +249,34 @@
               <button class='btn-submit btn' type='submit'>Enviar</button>
             </form>
           </div>
+        </div>
+      </section>
+
+      <section class="sessao-orcamento">
+        <div class="orcamento-wrapper">
+          <h1>Faça um orçamento</h1>
+          <form >
+            <label for="qtde">Qtde de paginas</label>
+            <input type="number" name='qtde' id='qtde' min='1' max='99'>
+            <label for="js">Preciso de um script JS</label>
+            <input type="checkbox" name='js' id='js'>
+            <label>Layout</label>
+            <div class="group-layout">
+              <div>
+                <input type="radio" name="layout" id="layout-sim">
+                <label for="layout-sim">Preciso de um layout</label>
+              </div>
+
+              <div>
+                <input type="radio" name="layout" id="layout-nao">
+                <label for="layout-nao">Jã tenho um layout</label>
+              </div>
+
+            </div>
+            <label for="prazo">Prazo</label>
+            <input type="range" name="prazo" id="prazo">
+            <button class="btn btn-orcamento" type="submit">Enviar</button>
+          </form>
         </div>
       </section>
     </div>

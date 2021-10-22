@@ -12,3 +12,7 @@ o controle das tarefas desse projeto será realizado no GitHub
 :up:atualização
 :bug:correção de bug
 :checkered_flag:release
+
+## Photo by
+
+unsplash
