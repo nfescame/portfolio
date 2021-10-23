@@ -2,7 +2,7 @@
 
 Portifólio do desenvolvedor em HTML5, CSS3, Javascript 
 
-
+![alt text](https://github.com/nfescame/portifolio-/blob/main/imagens/bg.jpg?raw=true)
 ## Tarefas
 
 o controle das tarefas desse projeto será realizado no GitHub
