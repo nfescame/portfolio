@@ -1,6 +1,6 @@
 # portfolio
 
-Portifólio do desenvolvedor
+Portifólio do desenvolvedor em HTML5, CSS3, Javascript 
 
 ## Tarefas
 
