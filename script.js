@@ -10,6 +10,17 @@ document
     document.querySelector(".container").classList.toggle("show-menu")
   );
 
+document
+  .querySelector(".btn")
+  .addEventListener("click", () =>
+    document.querySelector(".aside-sobre").classList.toggle("show-sobre")
+  );
+document
+  .querySelector(".icon-close")
+  .addEventListener("click", () =>
+    document.querySelector(".aside-sobre").classList.toggle("show-sobre")
+  );
+
 // document.querySelector("#qtde").addEventListener("change", atualizarPreco);
 // document.querySelector("#js").addEventListener("change", atualizarPreco);
 // document

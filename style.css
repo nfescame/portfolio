@@ -157,6 +157,53 @@ header {
   }
 }
 
+.sidebar-sobre {
+  border-radius: 0 0 100% 0;
+  width: 30rem;
+  height: 30rem;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0rem;
+  transition: all 1s;
+}
+.show-sobre .sidebar-sobre {
+  width: 0rem;
+  height: 0rem;
+}
+
+.container-sobre {
+  position: absolute;
+  padding: 2rem;
+  width: 60%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-65%, -45%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: all 1s;
+}
+
+.show-sobre .container-sobre {
+  transform: translate(-160%, -120%);
+}
+
+.sidebar-sobre .title {
+  font-size: 2.5rem;
+  color: #5d26c1;
+}
+.sidebar-sobre .text {
+  font-size: 1.1rem;
+  color: #262626;
+}
+.container-sobre i {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #6a3093;
+}
+
 .sidebar {
   width: 20rem;
   height: 100vh;
@@ -306,13 +353,13 @@ header {
 
 .conhecimento-img-wrapper {
   grid-column: 7/15;
-  grid-row: 3/8;
+  grid-row: 4/8;
   width: 100%;
 }
 
 .conhecimento-img-wrapper img {
   object-fit: cover;
-  width: 50%;
+  width: 20%;
 }
 
 /* projetos### */
@@ -558,6 +605,12 @@ header {
     margin-bottom: 0.5rem;
   }
   .card:nth-child(3) {
+    grid-column: 1/4;
+    width: 100%;
+    height: 13rem;
+    margin-bottom: 0.5rem;
+  }
+  .card:nth-child(4) {
     grid-column: 1/4;
     width: 100%;
     height: 13rem;
